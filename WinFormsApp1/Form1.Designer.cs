@@ -60,6 +60,39 @@
             button2 = new Button();
             label12 = new Label();
             label13 = new Label();
+            label14 = new Label();
+            label15 = new Label();
+            Burger_Amount = new TextBox();
+            Burger_Price = new TextBox();
+            Burger_Check = new CheckBox();
+            Pizza_Amount = new TextBox();
+            Pizza_Price = new TextBox();
+            Pizza_Check = new CheckBox();
+            groupBox1 = new GroupBox();
+            groupBox2 = new GroupBox();
+            groupBox4 = new GroupBox();
+            label18 = new Label();
+            label16 = new Label();
+            Discount_All = new CheckBox();
+            Tb_DisAll = new TextBox();
+            Discount_Drink = new CheckBox();
+            Tb_DisDrink = new TextBox();
+            Discount_Food = new CheckBox();
+            Tb_DisFood = new TextBox();
+            label17 = new Label();
+            OneStang = new TextBox();
+            FiveStang = new TextBox();
+            TenStang = new TextBox();
+            TwentyFiveStang = new TextBox();
+            FiftyStang = new TextBox();
+            label19 = new Label();
+            label20 = new Label();
+            label21 = new Label();
+            label22 = new Label();
+            label23 = new Label();
+            groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
+            groupBox4.SuspendLayout();
             SuspendLayout();
             // 
             // Total
@@ -145,7 +178,7 @@
             // Cof_check
             // 
             Cof_check.AutoSize = true;
-            Cof_check.Location = new Point(34, 26);
+            Cof_check.Location = new Point(0, 24);
             Cof_check.Name = "Cof_check";
             Cof_check.Size = new Size(61, 19);
             Cof_check.TabIndex = 0;
@@ -157,7 +190,7 @@
             // 
             button1.Location = new Point(335, 22);
             button1.Name = "button1";
-            button1.Size = new Size(75, 63);
+            button1.Size = new Size(76, 365);
             button1.TabIndex = 1;
             button1.Text = "Check out";
             button1.UseVisualStyleBackColor = true;
@@ -166,7 +199,7 @@
             // CoffeePrice
             // 
             CoffeePrice.Enabled = false;
-            CoffeePrice.Location = new Point(123, 24);
+            CoffeePrice.Location = new Point(89, 22);
             CoffeePrice.Name = "CoffeePrice";
             CoffeePrice.Size = new Size(100, 23);
             CoffeePrice.TabIndex = 2;
@@ -175,7 +208,7 @@
             // HowManyCoffee
             // 
             HowManyCoffee.Enabled = false;
-            HowManyCoffee.Location = new Point(229, 24);
+            HowManyCoffee.Location = new Point(195, 22);
             HowManyCoffee.Name = "HowManyCoffee";
             HowManyCoffee.Size = new Size(100, 23);
             HowManyCoffee.TabIndex = 3;
@@ -183,7 +216,7 @@
             // HowManyTea
             // 
             HowManyTea.Enabled = false;
-            HowManyTea.Location = new Point(229, 53);
+            HowManyTea.Location = new Point(195, 51);
             HowManyTea.Name = "HowManyTea";
             HowManyTea.Size = new Size(100, 23);
             HowManyTea.TabIndex = 6;
@@ -192,7 +225,7 @@
             // TeaPrice
             // 
             TeaPrice.Enabled = false;
-            TeaPrice.Location = new Point(123, 53);
+            TeaPrice.Location = new Point(89, 51);
             TeaPrice.Name = "TeaPrice";
             TeaPrice.Size = new Size(100, 23);
             TeaPrice.TabIndex = 5;
@@ -200,7 +233,7 @@
             // Tea_check
             // 
             Tea_check.AutoSize = true;
-            Tea_check.Location = new Point(34, 55);
+            Tea_check.Location = new Point(0, 53);
             Tea_check.Name = "Tea_check";
             Tea_check.Size = new Size(43, 19);
             Tea_check.TabIndex = 4;
@@ -327,7 +360,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(151, 79);
+            label12.Location = new Point(117, 77);
             label12.Name = "label12";
             label12.Size = new Size(29, 15);
             label12.TabIndex = 31;
@@ -336,19 +369,327 @@
             // label13
             // 
             label13.AutoSize = true;
-            label13.Location = new Point(256, 79);
+            label13.Location = new Point(222, 77);
             label13.Name = "label13";
             label13.Size = new Size(37, 15);
             label13.TabIndex = 32;
             label13.Text = "จำนวน";
+            // 
+            // label14
+            // 
+            label14.AutoSize = true;
+            label14.Location = new Point(222, 80);
+            label14.Name = "label14";
+            label14.Size = new Size(37, 15);
+            label14.TabIndex = 40;
+            label14.Text = "จำนวน";
+            // 
+            // label15
+            // 
+            label15.AutoSize = true;
+            label15.Location = new Point(117, 80);
+            label15.Name = "label15";
+            label15.Size = new Size(29, 15);
+            label15.TabIndex = 39;
+            label15.Text = "ราคา";
+            // 
+            // Burger_Amount
+            // 
+            Burger_Amount.Enabled = false;
+            Burger_Amount.Location = new Point(195, 54);
+            Burger_Amount.Name = "Burger_Amount";
+            Burger_Amount.Size = new Size(100, 23);
+            Burger_Amount.TabIndex = 38;
+            // 
+            // Burger_Price
+            // 
+            Burger_Price.Enabled = false;
+            Burger_Price.Location = new Point(89, 54);
+            Burger_Price.Name = "Burger_Price";
+            Burger_Price.Size = new Size(100, 23);
+            Burger_Price.TabIndex = 37;
+            // 
+            // Burger_Check
+            // 
+            Burger_Check.AutoSize = true;
+            Burger_Check.Location = new Point(0, 56);
+            Burger_Check.Name = "Burger_Check";
+            Burger_Check.Size = new Size(61, 19);
+            Burger_Check.TabIndex = 36;
+            Burger_Check.Text = "Burger";
+            Burger_Check.UseVisualStyleBackColor = true;
+            Burger_Check.CheckedChanged += Burger_Check_CheckedChanged;
+            // 
+            // Pizza_Amount
+            // 
+            Pizza_Amount.Enabled = false;
+            Pizza_Amount.Location = new Point(195, 25);
+            Pizza_Amount.Name = "Pizza_Amount";
+            Pizza_Amount.Size = new Size(100, 23);
+            Pizza_Amount.TabIndex = 35;
+            // 
+            // Pizza_Price
+            // 
+            Pizza_Price.Enabled = false;
+            Pizza_Price.Location = new Point(89, 25);
+            Pizza_Price.Name = "Pizza_Price";
+            Pizza_Price.Size = new Size(100, 23);
+            Pizza_Price.TabIndex = 34;
+            // 
+            // Pizza_Check
+            // 
+            Pizza_Check.AutoSize = true;
+            Pizza_Check.Location = new Point(0, 27);
+            Pizza_Check.Name = "Pizza_Check";
+            Pizza_Check.Size = new Size(52, 19);
+            Pizza_Check.TabIndex = 33;
+            Pizza_Check.Text = "Pizza";
+            Pizza_Check.UseVisualStyleBackColor = true;
+            Pizza_Check.CheckedChanged += Pizza_Check_CheckedChanged;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(HowManyCoffee);
+            groupBox1.Controls.Add(Cof_check);
+            groupBox1.Controls.Add(CoffeePrice);
+            groupBox1.Controls.Add(Tea_check);
+            groupBox1.Controls.Add(TeaPrice);
+            groupBox1.Controls.Add(HowManyTea);
+            groupBox1.Controls.Add(label12);
+            groupBox1.Controls.Add(label13);
+            groupBox1.Location = new Point(34, 12);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(295, 100);
+            groupBox1.TabIndex = 49;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "Drink";
+            groupBox1.Enter += groupBox1_Enter;
+            // 
+            // groupBox2
+            // 
+            groupBox2.Controls.Add(Pizza_Check);
+            groupBox2.Controls.Add(Pizza_Price);
+            groupBox2.Controls.Add(Pizza_Amount);
+            groupBox2.Controls.Add(Burger_Check);
+            groupBox2.Controls.Add(Burger_Price);
+            groupBox2.Controls.Add(Burger_Amount);
+            groupBox2.Controls.Add(label15);
+            groupBox2.Controls.Add(label14);
+            groupBox2.Location = new Point(34, 118);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(295, 100);
+            groupBox2.TabIndex = 50;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "Food";
+            // 
+            // groupBox4
+            // 
+            groupBox4.Controls.Add(label18);
+            groupBox4.Controls.Add(label16);
+            groupBox4.Controls.Add(Discount_All);
+            groupBox4.Controls.Add(Tb_DisAll);
+            groupBox4.Controls.Add(Discount_Drink);
+            groupBox4.Controls.Add(Tb_DisDrink);
+            groupBox4.Controls.Add(Discount_Food);
+            groupBox4.Controls.Add(Tb_DisFood);
+            groupBox4.Controls.Add(label17);
+            groupBox4.Location = new Point(34, 241);
+            groupBox4.Name = "groupBox4";
+            groupBox4.Size = new Size(295, 171);
+            groupBox4.TabIndex = 51;
+            groupBox4.TabStop = false;
+            groupBox4.Text = "Discount";
+            groupBox4.Enter += groupBox4_Enter;
+            // 
+            // label18
+            // 
+            label18.AutoSize = true;
+            label18.Location = new Point(195, 94);
+            label18.Name = "label18";
+            label18.Size = new Size(17, 15);
+            label18.TabIndex = 44;
+            label18.Text = "%";
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(195, 60);
+            label16.Name = "label16";
+            label16.Size = new Size(17, 15);
+            label16.TabIndex = 43;
+            label16.Text = "%";
+            // 
+            // Discount_All
+            // 
+            Discount_All.AutoSize = true;
+            Discount_All.Location = new Point(0, 85);
+            Discount_All.Name = "Discount_All";
+            Discount_All.Size = new Size(40, 19);
+            Discount_All.TabIndex = 41;
+            Discount_All.Text = "All";
+            Discount_All.UseVisualStyleBackColor = true;
+            Discount_All.CheckedChanged += Discount_All_CheckedChanged;
+            // 
+            // Tb_DisAll
+            // 
+            Tb_DisAll.Enabled = false;
+            Tb_DisAll.Location = new Point(89, 83);
+            Tb_DisAll.Name = "Tb_DisAll";
+            Tb_DisAll.Size = new Size(100, 23);
+            Tb_DisAll.TabIndex = 42;
+            // 
+            // Discount_Drink
+            // 
+            Discount_Drink.AutoSize = true;
+            Discount_Drink.Location = new Point(0, 27);
+            Discount_Drink.Name = "Discount_Drink";
+            Discount_Drink.Size = new Size(54, 19);
+            Discount_Drink.TabIndex = 33;
+            Discount_Drink.Text = "Drink";
+            Discount_Drink.UseVisualStyleBackColor = true;
+            Discount_Drink.CheckedChanged += checkBox3_CheckedChanged;
+            // 
+            // Tb_DisDrink
+            // 
+            Tb_DisDrink.Enabled = false;
+            Tb_DisDrink.Location = new Point(89, 25);
+            Tb_DisDrink.Name = "Tb_DisDrink";
+            Tb_DisDrink.Size = new Size(100, 23);
+            Tb_DisDrink.TabIndex = 34;
+            // 
+            // Discount_Food
+            // 
+            Discount_Food.AutoSize = true;
+            Discount_Food.Location = new Point(0, 56);
+            Discount_Food.Name = "Discount_Food";
+            Discount_Food.Size = new Size(53, 19);
+            Discount_Food.TabIndex = 36;
+            Discount_Food.Text = "Food";
+            Discount_Food.UseVisualStyleBackColor = true;
+            Discount_Food.CheckedChanged += Discount_Food_CheckedChanged;
+            // 
+            // Tb_DisFood
+            // 
+            Tb_DisFood.Enabled = false;
+            Tb_DisFood.Location = new Point(89, 54);
+            Tb_DisFood.Name = "Tb_DisFood";
+            Tb_DisFood.Size = new Size(100, 23);
+            Tb_DisFood.TabIndex = 37;
+            // 
+            // label17
+            // 
+            label17.AutoSize = true;
+            label17.Location = new Point(195, 28);
+            label17.Name = "label17";
+            label17.Size = new Size(17, 15);
+            label17.TabIndex = 40;
+            label17.Text = "%";
+            label17.Click += label17_Click;
+            // 
+            // OneStang
+            // 
+            OneStang.BackColor = SystemColors.ButtonHighlight;
+            OneStang.Location = new Point(621, 366);
+            OneStang.Name = "OneStang";
+            OneStang.Size = new Size(100, 23);
+            OneStang.TabIndex = 56;
+            OneStang.TextChanged += textBox1_TextChanged;
+            // 
+            // FiveStang
+            // 
+            FiveStang.BackColor = SystemColors.ButtonHighlight;
+            FiveStang.Location = new Point(621, 337);
+            FiveStang.Name = "FiveStang";
+            FiveStang.Size = new Size(100, 23);
+            FiveStang.TabIndex = 55;
+            // 
+            // TenStang
+            // 
+            TenStang.BackColor = SystemColors.ButtonHighlight;
+            TenStang.Location = new Point(621, 312);
+            TenStang.Name = "TenStang";
+            TenStang.Size = new Size(100, 23);
+            TenStang.TabIndex = 54;
+            // 
+            // TwentyFiveStang
+            // 
+            TwentyFiveStang.BackColor = SystemColors.ButtonHighlight;
+            TwentyFiveStang.Location = new Point(621, 283);
+            TwentyFiveStang.Name = "TwentyFiveStang";
+            TwentyFiveStang.Size = new Size(100, 23);
+            TwentyFiveStang.TabIndex = 53;
+            // 
+            // FiftyStang
+            // 
+            FiftyStang.BackColor = SystemColors.ButtonHighlight;
+            FiftyStang.Location = new Point(621, 254);
+            FiftyStang.Name = "FiftyStang";
+            FiftyStang.Size = new Size(100, 23);
+            FiftyStang.TabIndex = 52;
+            // 
+            // label19
+            // 
+            label19.AutoSize = true;
+            label19.Location = new Point(587, 364);
+            label19.Name = "label19";
+            label19.Size = new Size(28, 15);
+            label19.TabIndex = 57;
+            label19.Text = "0.01";
+            // 
+            // label20
+            // 
+            label20.AutoSize = true;
+            label20.Location = new Point(587, 340);
+            label20.Name = "label20";
+            label20.Size = new Size(28, 15);
+            label20.TabIndex = 58;
+            label20.Text = "0.05";
+            // 
+            // label21
+            // 
+            label21.AutoSize = true;
+            label21.Location = new Point(587, 313);
+            label21.Name = "label21";
+            label21.Size = new Size(28, 15);
+            label21.TabIndex = 61;
+            label21.Text = "0.10";
+            // 
+            // label22
+            // 
+            label22.AutoSize = true;
+            label22.Location = new Point(587, 286);
+            label22.Name = "label22";
+            label22.Size = new Size(28, 15);
+            label22.TabIndex = 60;
+            label22.Text = "0.25";
+            // 
+            // label23
+            // 
+            label23.AutoSize = true;
+            label23.Location = new Point(587, 260);
+            label23.Name = "label23";
+            label23.Size = new Size(28, 15);
+            label23.TabIndex = 59;
+            label23.Text = "0.50";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(label13);
-            Controls.Add(label12);
+            Controls.Add(label21);
+            Controls.Add(label22);
+            Controls.Add(label23);
+            Controls.Add(label20);
+            Controls.Add(label19);
+            Controls.Add(OneStang);
+            Controls.Add(FiveStang);
+            Controls.Add(TenStang);
+            Controls.Add(TwentyFiveStang);
+            Controls.Add(FiftyStang);
+            Controls.Add(groupBox4);
+            Controls.Add(groupBox2);
+            Controls.Add(groupBox1);
             Controls.Add(button2);
             Controls.Add(One);
             Controls.Add(Five);
@@ -372,15 +713,16 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(Total);
-            Controls.Add(HowManyTea);
-            Controls.Add(TeaPrice);
-            Controls.Add(Tea_check);
-            Controls.Add(HowManyCoffee);
-            Controls.Add(CoffeePrice);
             Controls.Add(button1);
-            Controls.Add(Cof_check);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
+            groupBox4.ResumeLayout(false);
+            groupBox4.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -419,5 +761,35 @@
         private Button button2;
         private Label label12;
         private Label label13;
+        private Label label14;
+        private Label label15;
+        private TextBox Burger_Amount;
+        private TextBox Burger_Price;
+        private CheckBox Burger_Check;
+        private TextBox Pizza_Amount;
+        private TextBox Pizza_Price;
+        private CheckBox Pizza_Check;
+        private GroupBox groupBox1;
+        private GroupBox groupBox2;
+        private GroupBox groupBox4;
+        private CheckBox Discount_Drink;
+        private TextBox Tb_DisDrink;
+        private CheckBox Discount_Food;
+        private TextBox Tb_DisFood;
+        private Label label17;
+        private CheckBox Discount_All;
+        private TextBox Tb_DisAll;
+        private Label label18;
+        private Label label16;
+        private TextBox OneStang;
+        private TextBox FiveStang;
+        private TextBox TenStang;
+        private TextBox TwentyFiveStang;
+        private TextBox FiftyStang;
+        private Label label19;
+        private Label label20;
+        private Label label21;
+        private Label label22;
+        private Label label23;
     }
 }
